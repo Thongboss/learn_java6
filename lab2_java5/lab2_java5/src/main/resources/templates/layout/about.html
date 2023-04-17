@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+ th:replace="~{layout/layout::dynamic(~{::body})}">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <h3 th:text="#{about.title}">Giới thiệu</h3>
+        <i th:text="#{about.content}">Đây là trang giới thiệu</i>
+    </body>
+</html>

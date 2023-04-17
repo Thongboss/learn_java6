@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+th:replace="~{layout/layout::dynamic(~{::body})}">
+    <head>
+        <meta charset="utf-8">
+        <title>Validate</title>
+    </head>
+
+    <body>
+        <h3>Result</h3>
+        <ul th:object="${sv}">
+            <li>Email Address: <i th:text="${sv.email}"></i></li>
+            <li>Full name: <i th:text="*{fullName}"></i></li>
+            <li>Mark: <i th:text="${sv.mark}"></i></li>
+            <li>Gender: <i th:text="*{gender} ? 'Male' : 'Female'"></i></li>
+            <li>Nationality: <i th:text="*{country}"></i></li>
+        </ul>
+    </body>
+</html>

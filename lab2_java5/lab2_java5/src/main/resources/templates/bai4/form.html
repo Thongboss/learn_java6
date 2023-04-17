@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Lab 2 bài 4</title>
+    </head>
+
+    <body>
+        <form th:action="@{/list/save}" method="post">
+            <input name="name" type="text" placeholder="please input name"/><br>
+            <input name="price" type="number" placeholder="please input price"/><br>
+            <button>save</button>
+        </form>
+        <ul>
+            <li th:text="${product1.name}"></li>
+            <li th:text="${product1.price}"></li>
+        </ul>
+        <ul>
+            <li th:text="${product.name}"></li>
+            <li th:text="${product.price}"></li>
+        </ul>
+        <ul th:each=" pro : ${list}" th:object="${pro}">
+            <li th:text="${pro.name}"></li>
+            <li th:text="${pro.price}"></li>
+        </ul>
+    </body>
+</html>

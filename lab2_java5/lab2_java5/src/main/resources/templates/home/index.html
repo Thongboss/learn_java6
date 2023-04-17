@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <title>Thymleaf</title>
+    </head>
+
+    <body>
+        <img th:src="@{/images/logo.jpg}" alt="ADC" style="height: 250px; width: 250px;">
+        <nav th:replace="~{/layout/menu.html}"></nav>
+        <h1 th:text="${message}"></h1>
+        <a th:text="#{menu.home}"></a>
+        <a href="" th:text="#{menu.tab}"></a>
+        <p th:text="#{menu.tab}"></p>
+    </body>
+</html>

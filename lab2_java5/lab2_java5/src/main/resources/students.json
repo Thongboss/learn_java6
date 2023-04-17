@@ -1,0 +1,52 @@
+[
+{
+   "name" : "Nguyễn Văn Tèo",
+   "mark" : 7.5,
+   "gender" : true,
+   "subjects" : ["WEB205","COM108"],
+   "contact" : {
+       "email" : "Teonv@gmail.com",
+       "phone" : "0357152152"
+   }
+},
+{
+   "name" : "Lê Thị Mỹ Hồng",
+   "mark" : 6.0,
+   "gender" : false,
+   "subjects" : ["WEB205","COM108"],
+   "contact" : {
+       "email" : "Hongltm@gmail.com",
+       "phone" : "0352353122"
+   }
+},
+{
+   "name" : "Phạm Đức Cường",
+   "mark" : 9.5,
+   "gender" : true,
+   "subjects" : ["WEB205"],
+   "contact" : {
+       "email" : "Cuongpd@gmail.com",
+       "phone" : "0318112112"
+   }
+},
+{
+   "name" : "Trần Thị Thu Phương",
+   "mark" : 5.5,
+   "gender" : false,
+   "subjects" : ["WEB205","COM108"],
+   "contact" : {
+       "email" : "Phuongttt@gmail.com",
+       "phone" : "0332568256"
+   }
+},
+{
+   "name" : "Đoàn Thị Kim Ty",
+   "mark" : 8.0,
+   "gender" : false,
+   "subjects" : ["WEB205","COM108","Web238"],
+   "contact" : {
+       "email" : "Tydtk@gmail.com",
+       "phone" : "0357154917"
+   }
+}
+]

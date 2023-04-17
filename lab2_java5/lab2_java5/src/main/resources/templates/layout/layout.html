@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+ th:fragment="dynamic(view)">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Tổ chức layout
+        </title>
+    </head>
+    <body>
+        <header>
+            <img th:src="@{/images/logo.jpg}" alt="@//@" style="height: 250px; width: 250px;">
+        </header>
+        <hr>
+        <nav th:insert="~{/layout/menu.html::navbar}"></nav>
+        <hr>
+        <main th:replace="${view}"></main>
+        <hr>
+        <hr>
+        <hr>
+        <footer>FPTPolytechnic &copy; 2021. All right reserved</footer>
+    </body>
+</html>

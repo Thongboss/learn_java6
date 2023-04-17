@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+            <nav>
+                <a th:href="@{/home/index}">Home</a> //
+                <a th:href="@{/home/about}">About Us</a>
+                |||
+                <a th:href="@{/home/admins}">Admin</a> //
+                <a th:href="@{/home/users}">User</a> //
+                <a th:href="@{/home/authenticated}">Authenticated</a>
+                |||
+                <a th:href="@{/auth/login/form}">Longin</a> //
+                <a th:href="@{/auth/logoff}">Logout</a>
+            </nav>
+
+    </body>
+</html>
