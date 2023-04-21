@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload file</title>
+    <script  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js">  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/exceljs.min.js"></script>
+</head>
+<body class="container">
+    <h3>Resful File manager</h3>
+    <div ng-app="app" ng-controller="ctrl">
+        <label>
+            Upload files:
+            <input type="file" accept="image/*" multiple
+            onchange="angular.element(this).scope().upload(this.files)">
+        </label>
+        <label ng-repeat="filename in filenames" title="double click to delete">
+            <img ng-src="{{url(filename)}}" ng-dblclick="delete(filename)">
+        </label>
+    </div>
+    <script src="file-ctrl.js"></script>
+</body>
+</html>
